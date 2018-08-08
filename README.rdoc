@@ -3,14 +3,14 @@
 # TM Races
 
 * Ruby version
-# 2.3.4
+- 2.3.4
 
 * Instructions
 `In the root directory`
-# gem install bundler
-# bundle install
-# rake db:create
-# rake db:migrate
+- gem install bundler
+- bundle install
+- rake db:create
+- rake db:migrate
 `To Add Races`
-# rake races:generate_races
-# rails s
+- rake races:generate_races
+- rails s
