@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  market_name: MyString
+  weekend_name: MyString
+  event_name: MyString
+  event_date: 2018-08-08
+  start_date: 2018-08-08 09:52:44
+  end_date: 2018-08-08 09:52:44
+  venue: MyString
+  address_1: MyString
+  address_2: MyString
+  venue_city: MyString
+  venue_state: MyString
+  tm5k: MyString
+  tmh: MyString
+  tmf: MyString
+  rtm: MyString
+  tmx: MyString
+
+two:
+  market_name: MyString
+  weekend_name: MyString
+  event_name: MyString
+  event_date: 2018-08-08
+  start_date: 2018-08-08 09:52:44
+  end_date: 2018-08-08 09:52:44
+  venue: MyString
+  address_1: MyString
+  address_2: MyString
+  venue_city: MyString
+  venue_state: MyString
+  tm5k: MyString
+  tmh: MyString
+  tmf: MyString
+  rtm: MyString
+  tmx: MyString

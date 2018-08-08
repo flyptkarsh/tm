@@ -1,0 +1,81 @@
+<%= form_for(@race) do |f| %>
+  <% if @race.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@race.errors.count, "error") %> prohibited this race from being saved:</h2>
+
+      <ul>
+      <% @race.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :market_name %><br>
+    <%= f.text_field :market_name %>
+  </div>
+  <div class="field">
+    <%= f.label :weekend_name %><br>
+    <%= f.text_field :weekend_name %>
+  </div>
+  <div class="field">
+    <%= f.label :event_name %><br>
+    <%= f.text_field :event_name %>
+  </div>
+  <div class="field">
+    <%= f.label :event_date %><br>
+    <%= f.date_select :event_date %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :venue %><br>
+    <%= f.text_field :venue %>
+  </div>
+  <div class="field">
+    <%= f.label :address_1 %><br>
+    <%= f.text_field :address_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :address_2 %><br>
+    <%= f.text_field :address_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :venue_city %><br>
+    <%= f.text_field :venue_city %>
+  </div>
+  <div class="field">
+    <%= f.label :venue_state %><br>
+    <%= f.text_field :venue_state %>
+  </div>
+  <div class="field">
+    <%= f.label :tm5k %><br>
+    <%= f.text_field :tm5k %>
+  </div>
+  <div class="field">
+    <%= f.label :tmh %><br>
+    <%= f.text_field :tmh %>
+  </div>
+  <div class="field">
+    <%= f.label :tmf %><br>
+    <%= f.text_field :tmf %>
+  </div>
+  <div class="field">
+    <%= f.label :rtm %><br>
+    <%= f.text_field :rtm %>
+  </div>
+  <div class="field">
+    <%= f.label :tmx %><br>
+    <%= f.text_field :tmx %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

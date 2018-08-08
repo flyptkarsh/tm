@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tough Mudder Races</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Market name</th>
+      <th>Weekend name</th>
+      <th>Event name</th>
+      <th>Event date</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Venue</th>
+      <th>Address 1</th>
+      <th>Address 2</th>
+      <th>Venue city</th>
+      <th>Venue state</th>
+      <th>Tm5k</th>
+      <th>Tmh</th>
+      <th>Tmf</th>
+      <th>Rtm</th>
+      <th>Tmx</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td><%= race.market_name %></td>
+        <td><%= race.weekend_name %></td>
+        <td><%= race.event_name %></td>
+        <td><%= race.event_date %></td>
+        <td><%= race.start_date %></td>
+        <td><%= race.end_date %></td>
+        <td><%= race.venue %></td>
+        <td><%= race.address_1 %></td>
+        <td><%= race.address_2 %></td>
+        <td><%= race.venue_city %></td>
+        <td><%= race.venue_state %></td>
+        <td><%= race.tm5k %></td>
+        <td><%= race.tmh %></td>
+        <td><%= race.tmf %></td>
+        <td><%= race.rtm %></td>
+        <td><%= race.tmx %></td>
+        <td><%= link_to 'Show', race %></td>
+        <td><%= link_to 'Edit', edit_race_path(race) %></td>
+        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Race', new_race_path %>
