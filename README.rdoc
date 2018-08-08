@@ -16,4 +16,6 @@
 
 === To Add Races from CSV
 - rake races:generate_races
+=== Run Server
 - rails s
+- navigate to http://localhost:3000 
