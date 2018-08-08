@@ -1,16 +1,15 @@
-== README
-
 # TM Races
 
-* Ruby version
+## Ruby version
 - 2.3.4
 
-* Instructions
-`In the root directory`
-- gem install bundler
+## Installation Instructions
+- install Ruby if needed. 
+- install Bundler if not installed. 
 - bundle install
 - rake db:create
 - rake db:migrate
-`To Add Races`
+
+## To Add Races from CSV
 - rake races:generate_races
 - rails s
